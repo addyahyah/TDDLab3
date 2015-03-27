@@ -24,4 +24,11 @@ public class PrimeFactorizationTest {
 		list.add(3);
 		assertEquals(list, test.primeFactorization(3));
 	}
+	
+	@Test
+	public void test4() {
+		list.add(2);
+		list.add(2);
+		assertEquals(list, test.primeFactorization(4));
+	}
 }
