@@ -7,10 +7,13 @@ public class PrimeFactorization {
 	}
 
 	public static ArrayList<Integer> primeFactorization(int num) {
-		ArrayList<Integer> list = new ArrayList<Integer>();
-		list.add(2);
-		return (num == 2)?list: new ArrayList<Integer>();
-		
+		ArrayList<Integer> list2 = new ArrayList<Integer>();
+		list2.add(2);
+		ArrayList<Integer> list3 = new ArrayList<Integer>();
+		list3.add(3);
+		return (num == 3) ? list3 : ((num == 2) ? list2
+				: new ArrayList<Integer>());
+
 	}
 
 }
