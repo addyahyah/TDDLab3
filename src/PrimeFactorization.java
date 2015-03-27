@@ -1,9 +1,12 @@
+import java.util.ArrayList;
 
 public class PrimeFactorization {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public PrimeFactorization(){
+		
+	}
+	public static ArrayList<Integer> primeFactorization(int num) {
+		return new ArrayList<Integer>();
 	}
 
 }
