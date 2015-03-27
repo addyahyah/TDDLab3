@@ -8,14 +8,17 @@ public class PrimeFactorization {
 
 	public static ArrayList<Integer> primeFactorization(int num) {
 		ArrayList<Integer> list2 = new ArrayList<Integer>();
-		list2.add(2);
-		ArrayList<Integer> list3 = new ArrayList<Integer>();
-		list3.add(3);
-		ArrayList<Integer> list4 = new ArrayList<Integer>();
-		list4.add(2);
-		list4.add(2);
-		return (num == 4) ? list4 : (num == 3) ? list3 : ((num == 2) ? list2
-				: new ArrayList<Integer>());
+		while (num % 2 == 0) {
+			if(num==0){
+				break;
+			}
+			list2.add(2);
+			num=num/2;
+		}
+		if(num!=1){
+			list2.add(num);
+		}
+		return list2;
 
 	}
 }
