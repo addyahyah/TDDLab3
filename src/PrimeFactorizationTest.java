@@ -60,7 +60,7 @@ public class PrimeFactorizationTest {
 		list.add(7);
 		list.add(7);
 		list.add(1327);
-		assertEquals(list, PrimeFactorization.primeFactorization(9));
+		assertEquals(list, PrimeFactorization.primeFactorization(325115));
 	}
 }
 

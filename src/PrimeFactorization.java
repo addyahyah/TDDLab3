@@ -8,20 +8,14 @@ public class PrimeFactorization {
 
 	public static ArrayList<Integer> primeFactorization(int num) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		while (num % 2 == 0) {
-			if (num == 0) {
-				break;
-			}
-			list.add(2);
-			num = num / 2;
+		for (int i = 2; i <= num; i++) {
+			while (num % i == 0) {
+				list.add(i);
+				num = num / i;
+			}	
 		}
 		if (num != 1) {
-			if (num == 9) {
-				list.add(3);
-				list.add(3);
-			} else {
-				list.add(num);
-			}
+			list.add(num);
 		}
 		return list;
 	}
