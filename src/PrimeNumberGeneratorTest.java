@@ -38,7 +38,7 @@ public class PrimeNumberGeneratorTest {
 		list3.add(3);
 		ArrayList<Integer> list4 = new ArrayList<Integer>();
 		list4.add(2);
-		list4.add(2);
+		list4.add(3);
 		return Arrays.asList(new Object[][] { 
 				{ 1, new ArrayList<Integer>() }, 
 				{ 2, list },

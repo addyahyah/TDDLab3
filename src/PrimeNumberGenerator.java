@@ -7,9 +7,12 @@ public class PrimeNumberGenerator {
 
 	public static ArrayList<Integer> primes(int num) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		if (num == 2) {
+		if (num==2) {
 			list.add(2);
 		}else if(num==3){
+			list.add(3);
+		}else if(num==4){
+			list.add(2);
 			list.add(3);
 		}
 		return list;
