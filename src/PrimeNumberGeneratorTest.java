@@ -34,7 +34,8 @@ public class PrimeNumberGeneratorTest {
 	public static Collection primeNumbers() {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(2);
-		return Arrays.asList(new Object[][] { { 2, list } });
+		return Arrays.asList(new Object[][] { { 2, list },
+				{ 1, new ArrayList<Integer>() } });
 	}
 
 	// This test will run 5 times since we have 5 parameters defined
