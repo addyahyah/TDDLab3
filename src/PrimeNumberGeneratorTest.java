@@ -34,15 +34,12 @@ public class PrimeNumberGeneratorTest {
 	public static Collection primeNumbers() {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(2);
-		return Arrays.asList(new Object[][] { { 2, list } 
-		});
+		return Arrays.asList(new Object[][] { { 2, list } });
 	}
 
 	// This test will run 5 times since we have 5 parameters defined
-	 @Test
-	 public void testPrimeNumberGenerator() {
-	 System.out.println("Parameterized Number is : " + inputNumber);
-	 assertEquals(expectedResult,
-	 primeNumberGenerator.validate(inputNumber));
-	 }
+	@Test
+	public void testPrimeNumberGenerator() {
+		assertEquals(expectedResult, primeNumberGenerator.primes(inputNumber));
+	}
 }
