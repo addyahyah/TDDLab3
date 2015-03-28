@@ -41,12 +41,18 @@ public class PrimeNumberGeneratorTest {
 		list6.add(2);
 		list6.add(3);
 		list6.add(5);
+		ArrayList<Integer> list8 = new ArrayList<Integer>();
+		list8.add(2);
+		list8.add(3);
+		list8.add(5);
+		list8.add(7);
 		return Arrays.asList(new Object[][] { 
 				{ 1, new ArrayList<Integer>() }, 
 				{ 2, new ArrayList<Integer>() },
 				{ 3, list3 }, 
 				{ 4, list4},
-				{6, list6}});
+				{6, list6},
+				{8, list8}});
 	}
 
 	// This test will run 5 times since we have 5 parameters defined
