@@ -9,6 +9,8 @@ public class PrimeNumberGenerator {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		if (num == 2) {
 			list.add(2);
+		}else if(num==3){
+			list.add(3);
 		}
 		return list;
 	}
