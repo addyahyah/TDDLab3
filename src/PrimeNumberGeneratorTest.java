@@ -32,10 +32,8 @@ public class PrimeNumberGeneratorTest {
 
 	@Parameterized.Parameters
 	public static Collection primeNumbers() {
-		ArrayList<Integer> list = new ArrayList<Integer>();
-		list.add(2);
 		ArrayList<Integer> list3 = new ArrayList<Integer>();
-		list3.add(3);
+		list3.add(2);
 		ArrayList<Integer> list4 = new ArrayList<Integer>();
 		list4.add(2);
 		list4.add(3);
@@ -45,7 +43,7 @@ public class PrimeNumberGeneratorTest {
 		list6.add(5);
 		return Arrays.asList(new Object[][] { 
 				{ 1, new ArrayList<Integer>() }, 
-				{ 2, list },
+				{ 2, new ArrayList<Integer>() },
 				{ 3, list3 }, 
 				{ 4, list4},
 				{6, list6}});
